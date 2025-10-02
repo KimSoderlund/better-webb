@@ -2,3 +2,23 @@
     margin:0;
     padding:0;
 }
+html, body {
+    width: 100%;
+}
+
+body {
+    display:grid;
+    grid-template-rows: auto auto 1fr auto;
+}
+
+
+.header-top {
+    display:flex;
+    justify-content: center;
+    background-color: aqua;
+}
+.logo {
+    display:inline-block;
+    width: 75%;
+    height: auto;
+}
