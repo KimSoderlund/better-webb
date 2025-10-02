@@ -11,14 +11,23 @@ body {
     grid-template-rows: auto auto 1fr auto;
 }
 
-
+        /* top header CSS */
 .header-top {
     display:flex;
     justify-content: center;
     background-color: aqua;
 }
 .logo {
-    display:inline-block;
-    width: 75%;
+    width: 50%;
     height: auto;
+}
+
+        /* navbar CSS */
+
+.header-bottom > nav{
+    display:none;
+}
+
+#nav-toggle:checked ~ nav {
+    display:block;
 }
