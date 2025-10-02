@@ -24,10 +24,11 @@ body {
 
         /* navbar CSS */
 
-.header-bottom > nav{
-    display:none;
-}
 
+        /*Hamburger-menu*/
+.header-bottom > nav {
+    display: none;
+}
 #nav-toggle:checked ~ nav {
-    display:block;
+    display: block;
 }
