@@ -11,7 +11,8 @@
 
         /* navbar CSS */
 .header-bottom {
-    position: relative;
+    position: sticky;
+    top:0;
     display: flex;
     /* justify-content: space-between;
     align-items: center; */
@@ -25,7 +26,7 @@
     display: none;
 }
 #nav-toggle {
-    top:-99999px;
+    left:-99999px;
     position: absolute;
 }
 .fa-bars:before {
