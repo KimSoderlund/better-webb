@@ -15,7 +15,7 @@ body {
 
 .hero-section {
     color:rgb(0, 0, 0);
-    height:100vh;
+    height:100vh;    
     background: linear-gradient(rgba(0, 0, 0, 0.4)), url(../images/hero-index.webp);
     background-position: center;
     background-size: cover;
