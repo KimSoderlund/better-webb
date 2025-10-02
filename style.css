@@ -29,6 +29,13 @@ body {
 .header-bottom > nav {
     display: none;
 }
+#nav-toggle {
+    top:-99999px;
+    position: absolute;
+}
+.fa-bars:before {
+    font-size:200%;
+}
 #nav-toggle:checked ~ nav {
     display: block;
 }
