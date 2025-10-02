@@ -12,3 +12,9 @@ body {
     grid-template-rows: auto auto 1fr auto;
 }
 
+
+.hero-section {
+    color:rgb(0, 0, 0);
+    height:100vh;
+    background-color: brown;
+}
