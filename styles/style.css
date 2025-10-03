@@ -1,6 +1,6 @@
 * {
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
 }
 
 html, body {
@@ -8,26 +8,34 @@ html, body {
 }
 
 body {
-    display:grid;
+    display: grid;
     grid-template-rows: auto 1fr auto;
 }
 
 
 .hero-section {
-    position:relative;  
-    color:whitesmoke;
+    position: relative;  
+    color: whitesmoke;
     height:100vh;    
     background: linear-gradient(rgba(0, 0, 0, 0.4)), url(../images/hero-index.webp);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 
-    display:flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-.hero-section > img{
-    width:300px;
-    height:auto;
+.hero-section > img {
+    width: 300px;
+    height: auto;
+}
+.border-right {
+    border-right: 3px solid white;
+}
+.hero-text {
+    font-weight: bold;
+    font-size: 150%;
+    padding-top: 0.5rem;
 }
