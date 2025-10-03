@@ -13,7 +13,8 @@ body {
 }
 
 
-.hero-section {  
+.hero-section {
+    position:relative;  
     color:whitesmoke;
     height:100vh;    
     background: linear-gradient(rgba(0, 0, 0, 0.4)), url(../images/hero-index.webp);
