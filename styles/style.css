@@ -35,7 +35,16 @@ body {
     border-right: 3px solid white;
 }
 .hero-text {
-    font-weight: bold;
+     font-weight: bold;
     font-size: 150%;
-    padding-top: 0.5rem;
+    padding-top: 0.5rem;   
+}
+
+.LR-text {
+text-align: center;
+padding:10px;
+}
+.left-right > img {
+    width: 100%;
+    height: auto;
 }
