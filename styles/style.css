@@ -40,9 +40,22 @@ body {
     padding-top: 0.5rem;   
 }
 
+
+.left-right {
+    background-color: #ddfffa;
+    font-size: 150%;
+}
 .LR-text {
-text-align: center;
-padding:10px;
+    padding:60px 10px 50px 10px;
+    text-align: center;
+}
+.LR-text h2 {
+    font-size: 200%;
+    margin:0 50px;
+    border-bottom: 3px solid black;
+}
+.LR-text p + p {
+    margin-top: 1rem;
 }
 .left-right > img {
     width: 100%;
