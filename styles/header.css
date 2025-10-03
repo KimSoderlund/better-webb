@@ -5,12 +5,16 @@
     left:0;
     right:0;
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: center;
     padding: 0.5rem 1rem;
     background-color: rgba(0, 168, 168, 0.9);
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
     z-index:9999;
+}
+.header-bottom img {
+    width:80px;
+    height: auto;
 }
 
         /*Hamburger-menu*/
