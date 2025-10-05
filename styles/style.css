@@ -63,6 +63,63 @@ body {
     height: auto;
 }
 
+.about {
+    margin-top: 5rem;
+    text-align: center;
+    font-size: 150%;
+    padding: 1rem;
+}
+.about h2 + p {
+    margin-top: 1rem;
+}
+
+
+.carousel {
+    display: flex;
+    overflow-x: auto;  /*Göm överflöd längst X axeln*/
+    scroll-snap-type: x mandatory; /**/
+    width: 100%;
+    margin: 3rem 0;
+    padding: 0;
+    scroll-behavior: smooth; 
+    anchor-name: --carousel; /*Ancor-name används som basis för att fästa knapparna på rätt plats*/
+}
+
+.carousel::-webkit-scrollbar {
+    display:none;
+}
+
+.carousel::scroll-button(right), .carousel::scroll-button(left) {
+    content: "→";
+    background-color: rgb(0, 0, 0);
+    height: 50px;
+    height: 50px;
+    border-radius:100px;
+    color: white;
+    font-size: 200%;
+    cursor: pointer;
+    position: absolute;
+}
+.carousel::scroll-button(left) {
+    content: "←";
+    left: 0;
+}
+.carousel::scroll-button(right){
+    right: 0;
+    top:0;
+}
+
+.card {
+    flex: 0 0 100%;
+    scroll-snap-align: start;
+    height: 12rem;
+    background-color: blue;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    border-radius: 1rem;
+}
+
 
 @media (min-width: 700px){
     .left-right {
