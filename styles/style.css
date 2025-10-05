@@ -75,14 +75,16 @@ body {
 
 
 .carousel {
+    position: relative;
     display: flex;
     overflow-x: auto;  /*Göm överflöd längst X axeln*/
     scroll-snap-type: x mandatory; /**/
     width: 100%;
     margin: 3rem 0;
     padding: 0;
-    scroll-behavior: smooth; 
-    anchor-name: --carousel; /*Ancor-name används som basis för att fästa knapparna på rätt plats*/
+    scroll-behavior: smooth;
+    anchor-name: --my-carousel;
+    align-self: anchor-center;
 }
 
 .carousel::-webkit-scrollbar {
@@ -99,14 +101,19 @@ body {
     font-size: 200%;
     cursor: pointer;
     position: absolute;
+    position-anchor: --my-carousel;
+    align-self: anchor-center;
 }
 .carousel::scroll-button(left) {
     content: "←";
-    left: 0;
+    left: calc(anchor(left) + 45px); 
 }
 .carousel::scroll-button(right){
-    right: 0;
-    top:0;
+    left: calc(anchor(right) - 45px); 
+}
+
+.carousel::scroll-button(right):disabled, .carousel::scroll-button(left):disabled {
+    opacity:0.5;
 }
 
 .card {
