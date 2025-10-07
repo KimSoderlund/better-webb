@@ -31,26 +31,30 @@
 
         <form action = "#">
             <div>
-                <label>Namn:</label>
-                <input type="text"
-                placeholder = "För & Efternamn"/>
+                <label for = "namn">Namn:</label>
+                <input type="text" id="namn" name ="namn" placeholder = "För & Efternamn" required>
             </div>
 
             <div>
-                <label>Välj Kost</label>
-                <select required>
+                <label for ="mat">Välj Kost</label>
+                <select id = "mat" name = "mat">
                     <option value = "-"> - </option>
-                    <option value = "Vegitarisk"> Vegitarisk </option>
-                    <option value = "Fisk"> Fisk </option>
-                    <option value = "Kött"> Kött </option>
+                    <option value = "veg"> Vegitarisk </option>
+                    <option value = "fisk"> Fisk </option>
+                    <option value = "kött"> Kött </option>
                 </select>
             </div>
 
             <div>
-                <label>Vilka dagar</label>
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
+                <p>Vilka dagar</p>
+                <label for ="fredag" id="fre">Fredag</label>
+                <input type="checkbox" id = "fredag" name = "fredag">
+
+                <label for ="lordag" id="lor">Lördag</label>
+                <input type="checkbox" id = "lordag" name = "lordag">
+                
+                <label for ="sondag" id="son">Söndag</label>
+                <input type="checkbox" id = "sondag" name = "sondag">
             </div>
 
             <div>
