@@ -66,7 +66,7 @@ body {
 
 .about {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     align-items: center;
     justify-content: center;
     margin-top: 5rem;
@@ -112,8 +112,7 @@ body {
     display:none;
     height: 20rem;
     width: 100%;
-    background-color: rgb(212, 74, 74);
-    border:6px solid pink;
+    background-color:  #ddfffa;
 }
 
 /* Show correct info box*/
@@ -145,5 +144,9 @@ body {
         object-fit: cover;
         object-position: center;
     }
+
+    .about {
+        grid-template-columns: 1fr 1fr;
+}
 
 }
