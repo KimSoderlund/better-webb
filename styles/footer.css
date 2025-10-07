@@ -1,0 +1,32 @@
+footer {
+    background-color: rgb(135, 147, 255);
+}
+
+.top-footer {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.footer-column {
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    font-size: 150%;
+}
+.footer-column h3 + * {
+    margin-top: 1rem;
+}
+
+.link-column a {
+    text-decoration: none;
+    color: white;
+}
+
+.imgstyling {
+    padding: 3rem;
+    display: grid;
+    grid-column: 1 / -1;
+    width: 600px;
+    height: auto;
+}
