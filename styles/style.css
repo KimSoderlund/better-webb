@@ -67,6 +67,8 @@ body {
 .about {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
     margin-top: 5rem;
     text-align: center;
     font-size: 150%;
@@ -78,6 +80,10 @@ body {
 
 .about-infocontainer{
     position: relative;
+    display: grid;
+    grid-template-columns: 40px 1fr 40px;
+    grid-template-rows: 1fr;
+    align-items: stretch;
 }
 
 /*hide radio buttons*/
@@ -86,22 +92,25 @@ body {
     left: -999999px;
 }
 .about-infocontainer label {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 168, 168, 0.74);
 }
 .about-infocontainer .btn1 {
-    left:0;
+    grid-column: 1;
 }
 .about-infocontainer .btn2 {
-    right:0;
+    grid-column: 3;
 }
 
 
 /* Info box styling*/
 .about-infobox {
+    grid-column: 2;
+    grid-row: 1;
     display:none;
-    height: 12rem;
+    height: 20rem;
     width: 100%;
     background-color: rgb(212, 74, 74);
     border:6px solid pink;

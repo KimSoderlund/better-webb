@@ -13,7 +13,7 @@
 
 
     <!-- Navbar section-->
-    <section class = "header-bottom">
+    <header class = "header-bottom">
         <a href ="#"><img src="images\logo-tiny-dark-bättrewebb.png" alt="tiny logo"></a>
         <input type = "checkbox" id = "nav-toggle">
         <label for = "nav-toggle"><i class ="fa fa-bars"></i></label>
@@ -22,7 +22,7 @@
             <a href = "#">link2</a>
             <a href = "#">link3</a>
         </nav>
-    </section>
+    </header>
    
 
     <!-- Main Page Section-->
@@ -58,22 +58,23 @@
                 <p>Bättre Webb är Sveriges nya mötesplats för alla som brinner för webbutveckling, design och digital innovation. Utvecklare, designers, UX-experter och teknikentusiaster samlas på Quality Hotel Waterfront i Göteborg för att dela kunskap, idéer och framtidsvisioner.</p>
             </div>
 
-            <div class= "about-infocontainer">
+            <div class="about-infocontainer">
+                <input type="radio" id="btn1" name="info" checked>
+                <label for="btn1" class="btn1">←</label>
+
+                <input type="radio" id="btn2" name="info">
+                <label for="btn2" class="btn2">→</label>
+
                 
-                <input type= "radio" id = "btn1"  name = "info" checked>
-                <label for= "btn1" class ="btn1">Vänster</label> 
-                
-                <input type= "radio" id = "btn2"  name = "info" >
-                <label for= "btn2" class = "btn2">Höger</label>
-                 
-                <div class = "about-infobox" id = "infobox1">
-                    <h2>Le test box</h2>
+                <div class="about-infobox" id="infobox1">
+                    <h2>Stärk ditt nätverk</h2>
+                    <p>Expandera ditt kontaktnät i branchen.</p>
                 </div>
 
-                <div class = "about-infobox" id = "infobox2">
-                    <h2>Le test box2</h2>
+                <div class="about-infobox" id="infobox2">
+                    <h2>10 Seminarier</h2>
+                    <p>Vidga dina vyer tillsammans med några av branchens skarpaste sinnen!</p>
                 </div>
-                
             </div>
         </secion>
     </main>
