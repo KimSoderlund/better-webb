@@ -5,7 +5,8 @@ footer {
 .top-footer {
     display:grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 1fr auto;
+    height:fit-content;
 }
 
 .footer-column {
@@ -17,6 +18,10 @@ footer {
 }
 .footer-column h3 + * {
     margin-top: 1rem;
+}
+
+.footer-column h3{
+    font-size: 150%;
 }
 
 .link-column {
@@ -38,7 +43,7 @@ footer {
     grid-template-rows:  auto auto auto;
     text-align: center;
     height: fit-content;
-    width:fit-content;
+    width: fit-content;
     justify-self: end;
 }
 .footer-endcolumn i {
@@ -59,6 +64,15 @@ footer {
     height: auto;
     padding: 5rem;
     grid-column: 1 / -1;
+}
+.top-footer > .footer-bottom {
+    
+    background-color: #03162D;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 150%;
+    grid-column: 1 / -1;
+    text-align: center;
+    padding:1rem;
 }
 
 @media (min-width: 700px) {
