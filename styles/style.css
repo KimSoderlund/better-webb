@@ -76,13 +76,29 @@ body {
     margin-top: 1rem;
 }
 
+.about-infocontainer{
+    position: relative;
+}
+
+/*hide radio buttons*/
 #btn1, #btn2 {
     position: absolute;
     left: -999999px;
 }
 .about-infocontainer label {
     cursor: pointer;
+    position: absolute;
+    top: 50%;
 }
+.about-infocontainer .btn1 {
+    left:0;
+}
+.about-infocontainer .btn2 {
+    right:0;
+}
+
+
+/* Info box styling*/
 .about-infobox {
     display:none;
     height: 12rem;
@@ -91,6 +107,7 @@ body {
     border:6px solid pink;
 }
 
+/* Show correct info box*/
 #btn1:checked ~ #infobox1 {
     display:flex;
     flex-direction: column;
@@ -99,6 +116,7 @@ body {
     display:flex;
     flex-direction: column;
 }
+
 
 @media (min-width: 700px){
     .left-right {
