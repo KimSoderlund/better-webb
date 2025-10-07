@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/booking.css">
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -28,7 +29,37 @@
 
     <main>
 
+        <form action = "#">
+            <div>
+                <label>Namn:</label>
+                <input type="text"
+                placeholder = "För & Efternamn"/>
+            </div>
 
+            <div>
+                <label>Välj Kost</label>
+                <select required>
+                    <option value = "-"> - </option>
+                    <option value = "Vegitarisk"> Vegitarisk </option>
+                    <option value = "Fisk"> Fisk </option>
+                    <option value = "Kött"> Kött </option>
+                </select>
+            </div>
+
+            <div>
+                <label>Vilka dagar</label>
+                <input type="checkbox">
+                <input type="checkbox">
+                <input type="checkbox">
+            </div>
+
+            <div>
+                <label>Allergier</label>
+                <textarea placeholder="..."></textarea>
+            </div>
+
+            <button class = "cta"> Submit </button>
+        </form>
 
 
 
