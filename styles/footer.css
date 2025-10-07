@@ -3,7 +3,7 @@ footer {
 }
 
 .top-footer {
-    display:grid;
+    display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr auto;
     height:fit-content;
@@ -65,14 +65,22 @@ footer {
     padding: 5rem;
     grid-column: 1 / -1;
 }
-.top-footer > .footer-bottom {
-    
+.footer-bottom {
     background-color: #03162D;
-    color: rgba(255, 255, 255, 0.7);
     font-size: 150%;
     grid-column: 1 / -1;
     text-align: center;
     padding:1rem;
+}
+
+.footer-bottom a {
+    text-decoration: none;
+    transition: color 1s;
+    color: rgba(255, 255, 255, 0.5);
+}
+.footer-bottom a:hover {
+    transition: color 0.2s;
+    color: rgba(255, 255, 255, 1);
 }
 
 @media (min-width: 700px) {
