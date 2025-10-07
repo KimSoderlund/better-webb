@@ -109,6 +109,7 @@ body {
     justify-content: center;
     cursor: pointer;
     background-color: rgba(0, 168, 168, 0.74);
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .about-infocontainer .btn1 {
@@ -139,6 +140,7 @@ body {
     justify-content: center;
     border-top: 3px solid  rgba(0, 168, 168, 0.74);
     border-bottom: 3px solid  rgba(0, 168, 168, 0.74);
+    transition: 2s;
 }
 
 /* Show correct info box*/
