@@ -1,4 +1,5 @@
-        /* navbar CSS */
+/* navbar CSS */
+
 .header-bottom {
     position: fixed;
     top:0;
@@ -91,8 +92,6 @@ label[for="nav-toggle"] {
         padding: 0;
 }
 
-
-
     .header-bottom > nav {
         display: flex;
         flex-direction: row !important;
@@ -101,8 +100,6 @@ label[for="nav-toggle"] {
         background: none !important;
         box-shadow: none !important;
     }
-
-    
 
     #nav-toggle, label[for = "nav-toggle"] {
         display: none;

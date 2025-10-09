@@ -36,10 +36,13 @@
         <form action = "#">
 
             <div>
-                <label for = "namn">Namn:</label>
+                <label for = "namn">Namn</label>
                 <input type="text" id="namn" name ="namn" placeholder = "För & Efternamn" required>
             </div>
-
+            <div>
+                <label for = "email">Email</label>
+                <input type = "email" id = "email" name = "email" placeholder = "E-post" required>
+            </div>
             <div>
                 <label for ="mat">Välj Kost</label>
                 <select id = "mat" name = "mat">
@@ -64,14 +67,14 @@
 
             <div>
                 <label>Allergier</label>
-                <textarea placeholder="..."></textarea>
+                <textarea id = "alergitext" placeholder = "..."></textarea>
             </div>
 
             <button class = "cta"> Submit </button>
 
         </form>
 
-
+        
     </main>
 
 
@@ -111,6 +114,6 @@
         </div>
     </footer>
 
-    
+
 </body>
 </html>
