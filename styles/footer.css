@@ -60,7 +60,7 @@ footer {
 .imgstyling {
     display: grid;
     justify-self: center;
-    width: 600px;
+    width: 50%;
     height: auto;
     padding: 5em;
     grid-column: 1 / -1;
@@ -85,7 +85,7 @@ footer {
 
 @media (min-width: 700px) {
     .top-footer {
-     grid-template-columns: 1fr auto 1fr;
+     grid-template-columns: auto auto auto;
     }
 
     .link-column {
@@ -93,8 +93,7 @@ footer {
     }
 
     .footer-column {
-    font-size: 200%;
-    padding: 3em;
+    font-size: 150%;
     }
     
 }
