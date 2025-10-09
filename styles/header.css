@@ -6,12 +6,19 @@
     right:0;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 0.5rem 1rem;
+   
+    /* padding: 0.5em 1em; */
     background-color: var(--background-dark);
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
     z-index:9999;
 }
+.header-bottom > nav > a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:100%;
+}
+
 .header-bottom img {
     width:80px;
     height: auto;
@@ -20,6 +27,8 @@
         /*Hamburger-menu*/
 .header-bottom > nav {
     display: none;
+    /* justify-content: center;
+    align-items: center; */
 }
 #nav-toggle {
     left:-99999px;
@@ -67,7 +76,6 @@
         flex-direction: row !important;
         gap: 1rem !important;
         justify-content: flex-end;
-        align-items:stretch;
 
         position: static !important;
         top: auto !important;
