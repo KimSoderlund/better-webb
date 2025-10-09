@@ -15,12 +15,26 @@ form > div {
     flex-direction: column;
 
     &.spaning {
-        grid-column: 1/-1;
+        grid-column: 1 / -1;
         text-align: center;
+    }
+    & .form-days {
+        display: flex;
+        flex-direction: row;
+        gap: 1em;
+        align-content:center;
     }
 }
 
+/*checkbox & label style*/
+input[type = "checkbox"] {
+    position: absolute;
+    left: -99999px;
+}
 
+.form-days input[type="checkbox"]:checked + label{
+    background-color:greenyellow;
+}
 
 #namn:invalid {
     background-color: rgba(255, 0, 0, 0.253);
