@@ -60,7 +60,7 @@ footer {
 .imgstyling {
     display: grid;
     justify-self: center;
-    width: 50%;
+    width: min(90%, 600px);
     height: auto;
     padding: 5em;
     grid-column: 1 / -1;
