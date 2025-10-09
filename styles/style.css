@@ -1,9 +1,19 @@
+:root {
+    --background-light: white;
+    --background-neutral:  #ddfffa;
+    --background-dark:  rgba(0, 168, 168, 0.9);
+    --icon-light: white;
+    --icon-neutral:  rgb(135, 147, 255);
+    --icon-dark: #03162D;
+    --seperatorshadow-neutral:#badad5;
+    --textcolor-light: white;
+    --textcolor-dark: #03162D
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
-    --backgroundlight: background-color: white;
 }
 
 html, body {
@@ -21,7 +31,7 @@ body {
 
 .hero-section {
     position: relative;  
-    color: whitesmoke;
+    color: var(--textcolor-light);
     height:100vh;    
     background: linear-gradient(rgba(0, 0, 0, 0.4)), url(../images/hero-index.webp);
     background-position: center;
@@ -52,9 +62,9 @@ body {
 
 .left-right {
     display:grid;
-    background-color: #ddfffa;
+    background-color: var(--background-neutral);
     font-size: 150%;
-    box-shadow: 0 1px 4px  #badad5;
+    box-shadow: 0 1px 4px  var(--seperatorshadow-neutral);
 }
 .LR-text {
     padding:60px 10px 50px 10px;
@@ -111,7 +121,7 @@ body {
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    background-color: rgba(0, 168, 168, 0.74);
+    background-color: var(--background-dark);
     transition: background-color 0.3s ease;
 }
 
@@ -159,7 +169,7 @@ body {
 /* Pushed button CSS */
 #btn1:checked + label.btn1,
 #btn2:checked + label.btn2 {
-    background-color: rgb(218, 218, 218);
+    background-color: var(--background-light);
     cursor:auto;
     
 }
