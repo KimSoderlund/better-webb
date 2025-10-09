@@ -8,7 +8,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 0.5rem 1rem;
-    background-color: rgba(0, 168, 168, 0.9);
+    background-color: var(--background-dark);
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
     z-index:9999;
 }
@@ -27,7 +27,7 @@
 }
 .fa-bars:before {
     font-size: 300%;
-    color: white;
+    color: var(--textcolor-light);
     cursor: pointer;
 }
 #nav-toggle:checked ~ nav {
@@ -39,7 +39,7 @@
     position: absolute;
     top: 100%;
     right: 0;
-    background-color: rgba(0, 168, 168, 0.9);
+    background-color: var(--background-dark);
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
     z-index: 99;
     min-height: fit-content;
@@ -51,13 +51,13 @@
     text-decoration: none;
     font-size: 200%;    
     font-weight: bold;
-    color: white;
+    color: var(--textcolor-light);
     padding: 0.5rem 1rem;
 }
 
 #nav-toggle ~ nav > a:hover {
     background-color: rgba(255, 255, 255, 0.7);
-    color: #00162D;
+    color: var(--icon-dark);
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
