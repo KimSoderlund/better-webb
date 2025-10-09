@@ -1,13 +1,36 @@
+main {
+    background-color: var(--background-neutral);
+}
+
 form {
     display:grid;
     grid-template-columns: auto auto;
     grid-template-rows: repeat(5 auto);
+
+    background-color: var(--background-dark);
+    color: var(--textcolor-dark);
     border: 3px solid black;
     width: 50%;
     padding:2em;
     gap:1em;
+
+    font-size: 120%;
      
-    margin: 3em;
+    margin: 6em 3em;
+}
+
+label {
+    margin-bottom: 0.2em;
+}
+
+form textarea, 
+form input[type = text],
+form input[type = email],
+form #mat {
+    background-color: var(--background-neutral);
+    padding:0.5em;
+    border:none;
+    box-shadow: 0px 0px 4px var(--background-dark) inset;
 }
 
 form > div {
@@ -28,6 +51,14 @@ form > div {
         gap: 1em;
         align-content: center;
     }
+    & label {
+        font-weight: bold;
+    }
+}
+
+form > div.span-row textarea {
+   resize: none; 
+   height:100%;
 }
 
 /*checkbox & label style*/
@@ -39,6 +70,7 @@ input[type = "checkbox"] {
 .form-days input[type="checkbox"]:checked + label{
     background-color:greenyellow;
 }
+
 
 #namn:invalid {
     background-color: rgba(255, 0, 0, 0.253);
