@@ -43,7 +43,6 @@
 label[for="nav-toggle"] {
     display: flex;
     justify-content: center;
-    justify-items: center;
     height: 100%;
 }
 
@@ -59,9 +58,7 @@ label[for="nav-toggle"] {
     background-color: var(--background-dark);
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
     z-index: 99;
-    min-height: fit-content;
     width: 50%;
-    min-width: fit-content;
 }
 
 #nav-toggle ~ nav > a {
@@ -81,8 +78,8 @@ label[for="nav-toggle"] {
 @media (min-width: 700px) {
 
     .header-bottom { 
-    align-items: stretch;
-    padding: 0;
+        align-items: stretch;
+        padding: 0;
 }
 
 
@@ -92,14 +89,10 @@ label[for="nav-toggle"] {
         flex-direction: row !important;
         gap: 1rem !important;
         justify-content: flex-end;
-
         position: static !important;
-        top: auto !important;
-        left: auto !important;
         background: none !important;
         box-shadow: none !important;
-        width: 100% !important;
-        min-width: unset !important;    
+        width: 100% !important;  
     }
 
     
