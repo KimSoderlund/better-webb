@@ -18,11 +18,15 @@ form > div {
         grid-column: 1 / -1;
         text-align: center;
     }
+    &.span-row {
+        grid-column: 2;
+        grid-row: 1 / 3;
+    }
     & .form-days {
         display: flex;
         flex-direction: row;
         gap: 1em;
-        align-content:center;
+        align-content: center;
     }
 }
 
