@@ -23,10 +23,7 @@ label {
     margin-bottom: 0.2em;
 }
 
-form textarea, 
-form input[type = text],
-form input[type = email],
-form #mat {
+form textarea, form input[type = text], form input[type = email], form #mat {
     background-color: var(--background-neutral);
     padding:0.5em;
     border:none;
@@ -66,9 +63,26 @@ input[type = "checkbox"] {
     position: absolute;
     left: -99999px;
 }
+.form-days {
+    display:flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.form-days label{
+    display:flex;
+    cursor: pointer;
+    border: 1px solid var(--textcolor-dark);
+    padding: 0.1em 0.2em;
+    box-shadow: 1px 1px 3px var(--textcolor-dark);
+    transition: background-color 0.1s;
+    
+    &:active {box-shadow: 1px 1px 3px var(--textcolor-dark) inset;}
+}
 
 .form-days input[type="checkbox"]:checked + label{
-    background-color:greenyellow;
+    background-color: var(--background-neutral);
+    box-shadow: 1px 1px 3px var(--textcolor-dark) inset;
 }
 
 
