@@ -7,13 +7,16 @@
 .schedule-section {
     display: grid;
     grid-template-columns: auto;
+    margin: 1.5em 1.5em;
+    column-gap: 1.5em;
+    row-gap: 1.5em;
 }
 
 
 .schedule-grid {
     display: grid;
     grid-template-columns: auto 1fr;
-    margin:3em 3em 0em 3em;
+    
 
     border: 1px solid black;
     outline: 2px solid black;
@@ -39,5 +42,6 @@
     .schedule-section {
     display: grid;
     grid-template-columns: auto auto;
+    margin: 3em 3em;
 }
 }
