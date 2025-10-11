@@ -88,15 +88,66 @@ body {
 
 
 .about {
+    margin:3em 2em;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
+    column-gap: 1em;
+    row-gap: 1em;
     align-items: right;
     justify-content: center;
     font-size: 150%;
 
     & h2 + p {margin-top: 0.3em;}
 }
+.about-text {
+    
+}
+.about-info {
+    position: relative;
+    background-color: var(--background-dark);
+    height:9em;
 
+    & div {
+        position:absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        
+    }
+}
+.fade1 {
+        opacity: 0;
+        animation-name: fade1;
+        animation-duration: 20s;
+        animation-iteration-count: infinite;
+}
+.fade2 {
+        opacity: 0;
+        animation-name: fade2;
+        animation-duration: 20s;
+        animation-iteration-count: infinite;
+}
+.fade3 {
+        opacity: 0;
+        animation-name: fade3;
+        animation-duration: 20s;
+        animation-iteration-count: infinite;
+}
+
+
+@keyframes fade1 {
+    0%, 20%, 100% {opacity: 1;}
+    30%, 90% {opacity:0;}
+}
+@keyframes fade2 {
+    0%, 20%, 60%, 100% {opacity: 0;}  
+    30%, 50% {opacity:1;}
+}
+@keyframes fade3 {
+    0%, 50%, 100% {opacity: 0;}
+    60%, 90% {opacity:1;}
+}
 
 @media (min-width: 700px){
     .left-right {
@@ -117,5 +168,22 @@ body {
         object-position: center;
     }
 
+
+    .about {
+        margin:3em 2em;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 1em;
+        align-items: right;
+        justify-content: center;
+        font-size: 150%;
+
+        & h2 + p {margin-top: 0.3em;}
+    }
+    
+    .about-info {
+    grid-column: 1;
+    grid-row:1;
+    }
 
 }
