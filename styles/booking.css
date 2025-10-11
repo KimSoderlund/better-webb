@@ -54,7 +54,8 @@ input[type = "checkbox"] {
     display:flex;
     height: 100%;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
+    color: var(--textcolor-light);
 }
 .form-days label{
     display:flex;
@@ -63,13 +64,15 @@ input[type = "checkbox"] {
     padding: 0.1em 0.2em;
     box-shadow: 1px 1px 3px var(--textcolor-dark);
     transition: background-color 0.1s;
+    transition: color 0.1s;
     
-    &:active {box-shadow: 1px 1px 3px var(--textcolor-dark) inset;}
+    &:active { box-shadow: 1px 1px 3px var(--textcolor-dark) inset; }
 }
 
 .form-days input[type="checkbox"]:checked + label{
     background-color: var(--background-neutral);
     box-shadow: 1px 1px 3px var(--textcolor-dark) inset;
+    color:var(--textcolor-dark);
 }
 
 
