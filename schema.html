@@ -6,11 +6,11 @@
         <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/schema.css"
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Bättre Webb Schema</title>
 </head>
 <body>
-
         <!-- Navbar section-->
     <header class = "header-bottom">
         <a href ="index.html"><img src="images\logo-tiny-dark-bättrewebb.png" alt="tiny logo"></a>
@@ -25,42 +25,43 @@
 
 
     <!--Schedule Section-->
-    <div>
-        <h2>Fredag</h2>
-        <p>09:00–09:30	Registrering & morgonkaffe</p>
-        <p>09:30–10:00	Välkomsttal & introduktion</p>
-        <p>10:00–11:00	Från Monolit till Mikrofrontend: Framtiden för Skalbar Webbarkitektur</p>
-        <p>11:15–12:15	Framtiden för CSS: Container Queries, Nesting och Beyond</p>
-        <p>12:15–13:30	Lunch</p>
-        <p>13:30–14:30	AI i Webbutveckling: Kod, Design och Användarupplevelse</p>
-        <p>14:45–15:45	Web Performance 2025: Så bygger du blixtsnabba sajter</p>
-        <p>15:45–16:15	Eftermiddagsfika</p>
-        <p>16:15–17:15	Design Systems & Tokenization: Enhetlighet i Stora Team</p>
-        <p>18:00–20:00	Middag & mingel i utställningshallen</p>
+    <div class = "schedule-grid">
+        <h2 style ="grid-column: 1/-1;">Fredag</h2>
+        <p>09:00–09:30</p><p>Registrering & morgonkaffe</p>
+        <p>09:30–10:00</p><p>Välkomsttal & introduktion</p>
+        <p>10:00–11:00</p><p>Från Monolit till Mikrofrontend: Framtiden för Skalbar Webbarkitektur</p>
+        <p>11:15–12:15</p><p>Framtiden för CSS: Container Queries, Nesting och Beyond</p>
+        <p>12:15–13:30</p><p>Lunch</p>
+        <p>13:30–14:30</p><p>AI i Webbutveckling: Kod, Design och Användarupplevelse</p>
+        <p>14:45–15:45</p><p>Web Performance 2025: Så bygger du blixtsnabba sajter</p>
+        <p>15:45–16:15</p><p>Eftermiddagsfika</p>
+        <p>16:15–17:15</p><p>Design Systems & Tokenization: Enhetlighet i Stora Team</p>
+        <p>18:00–20:00</p><p>Middag & mingel i utställningshallen</p>
     </div>
 
-    <div>
-        <h2>Lördag</h2>
-        <p>09:00–09:30	Morgonkaffe & samling</p>
-        <p>09:30–10:30	Realtid på webben: WebSockets, SSE och WebRTC i praktiken</p>
-        <p>10:45–11:45	Serverless & Edge Computing: Nästa steg i webbutvecklingen</p>
-        <p>12:00–13:15	Lunch</p>
-        <p>13:15–14:15	Webbsäkerhet 2025: Från OWASP till Zero Trust</p>
-        <p>14:30–15:30	Tillgänglighet på riktigt: Bygg inkluderande webbar</p>
-        <p>15:30–16:00	Eftermiddagsfika</p>
-        <p>16:00–17:00	Gästföreläsning – Special Topic (TBA)</p>
-        <p>18:00–20:30	Gemensam middag & kvällsprogram (quiz, nätverkande)</p>
+    <div class = "schedule-grid">
+        <h2 style = "grid-column: 1/-1;">Lördag</h2>
+        <p>09:00–09:30</p><p>Morgonkaffe & samling</p>
+        <p>09:30–10:30</p><p>Realtid på webben: WebSockets, SSE och WebRTC i praktiken</p>
+        <p>10:45–11:45</p><p>Serverless & Edge Computing: Nästa steg i webbutvecklingen</p>
+        <p>12:00–13:15</p><p>Lunch</p>
+        <p>13:15–14:15</p><p>Webbsäkerhet 2025: Från OWASP till Zero Trust</p>
+        <p>14:30–15:30</p><p>Tillgänglighet på riktigt: Bygg inkluderande webbar</p>
+        <p>15:30–16:00</p><p>Eftermiddagsfika</p>
+        <p>16:00–17:00</p><p>Gästföreläsning – Special Topic (TBA)</p>
+        <p>18:00–20:30</p><p>Gemensam middag & kvällsprogram (quiz, nätverkande)</p>
     </div>
-
-    <h2>Söndag</h2>
-    <p>09:30–10:00	Morgonkaffe</p>
-    <p>10:00–11:00	Från Kod till Kultur: Att bygga hållbara utvecklingsteam</p>
-    <p>11:15–12:00	Paneldiskussion: ”Vad händer med webben de kommande 5 åren?”</p>
-    <p>12:00–13:15	Lunch</p>
-    <p>13:15–14:15	Workshop & Summering: ”Ta med dig konventets lärdomar in i vardagen”</p>
-    <p>14:15–14:30	Fikapaus</p>
-    <p>14:30–15:00	Avslutning & tack för i år</p>
-
+    
+    <div class="schedule-grid">
+        <h2 style = "grid-column: 1/-1;">Söndag</h2>
+        <p>09:30–10:00</p><p>Morgonkaffe</p>
+        <p>10:00–11:00</p><p>Från Kod till Kultur: Att bygga hållbara utvecklingsteam</p>
+        <p>11:15–12:00</p><p>Paneldiskussion: ”Vad händer med webben de kommande 5 åren?”</p>
+        <p>12:00–13:15</p><p>Lunch</p>
+        <p>13:15–14:15</p><p>Workshop & Summering: ”Ta med dig konventets lärdomar in i vardagen”</p>
+        <p>14:15–14:30</p><p>Fikapaus</p>
+        <p>14:30–15:00</p><p>Avslutning & tack för i år</p>
+    </div>
     
 </body>
 </html>
