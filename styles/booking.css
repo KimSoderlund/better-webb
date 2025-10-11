@@ -15,9 +15,9 @@ form {
     color: var(--textcolor-dark);
     border: 3px solid black;
     padding: 1em;
-    gap:1em;
+    gap: 1em;
     font-size: 120%;
-    margin: 0.5em 2em;
+    margin: 3em 2em;
 }
 
 label {
