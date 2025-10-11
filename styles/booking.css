@@ -101,6 +101,29 @@ input[type = "checkbox"] {
 }
 
 
+.submit-button {
+    display: flex;
+    background-color: var(--background-light);
+    color: var(--textcolor-dark);
+    width: fit-content;
+    height: fit-content;
+    padding: 0.5em 1.5em;
+    justify-self: center;
+    align-self: center;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.1s;
+    font-size: 100%;
+
+    &:hover {
+        transform: translateY(-1px);
+        box-shadow: 1px 1px 2px var(--background-dark);
+    }
+    &:active {
+        box-shadow: 0 0 3px var(--textcolor-dark) inset;
+    }
+}
+
 @media (min-width:700px) {
 
 form {
