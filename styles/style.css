@@ -116,23 +116,19 @@ body {
         
     }
 }
-.fade1 {
-        opacity: 0;
-        animation-name: fade1;
-        animation-duration: 20s;
-        animation-iteration-count: infinite;
+.fade1, .fade2, .fade3 {
+    opacity: 0;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+.fade1 {       
+        animation-name: fade1;    
 }
 .fade2 {
-        opacity: 0;
         animation-name: fade2;
-        animation-duration: 20s;
-        animation-iteration-count: infinite;
 }
 .fade3 {
-        opacity: 0;
         animation-name: fade3;
-        animation-duration: 20s;
-        animation-iteration-count: infinite;
 }
 
 
