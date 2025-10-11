@@ -1,10 +1,18 @@
 .föreläs-section{
-    display:grid;
-    grid-template-columns: 1fr;
-    column-gap: 1em;
-    row-gap: 1em;
+    display:flex;
+    flex-direction: column;
+    gap: 1em;
 
     margin-top: 3em;
+}
+
+.lecture-container {
+    display:flex;
+    flex-direction: row;
+}
+
+.card, .lecture-text {
+    flex:1;
 }
 
 .card {
@@ -15,7 +23,13 @@
     background-color: var(--background-dark);
     height:9em;
 }
+.lecture-text {
+    display:flex;
+}
 
+.reversed {
+    flex-direction: row-reverse;
+}
 
 @media (min-width:700px) {
     .föreläs-section {
