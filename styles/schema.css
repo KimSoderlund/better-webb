@@ -1,8 +1,20 @@
-.schedule-grid{
-    margin-top: 9em;
-    display:grid;
+.hero-section {  
+    color: var(--textcolor-light);
+    height:50vh;
+    font-size: 200%;   
+}
+
+.schedule-section {
+    display: grid;
+    grid-template-columns: auto;
+}
+
+
+.schedule-grid {
+    display: grid;
     grid-template-columns: auto 1fr;
-    width:40vw;
+    margin:3em 3em 0em 3em;
+
     border: 1px solid black;
     outline: 2px solid black;
     
@@ -21,4 +33,11 @@
 .schedule-grid p:nth-child(4n+2), 
 .schedule-grid p:nth-child(4n+3) {
   background-color: var(--background-neutral); 
+}
+
+@media (min-width: 700px) {
+    .schedule-section {
+    display: grid;
+    grid-template-columns: auto auto;
+}
 }
