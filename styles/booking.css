@@ -73,17 +73,33 @@ input[type = "checkbox"] {
 }
 
 
-#namn:invalid {
-    background-color: rgba(255, 0, 0, 0.253);
+.form-field {
+    position: relative;
 }
 
-#email:invalid {
-    background-color: rgba(255, 0, 0, 0.253);
+.invalid-marker {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    color:red;
+    font-weight: bold;
+    width: 20px;
+    height: 20px;
+    border-radius: 9999px;
+    box-shadow: 0 0 3px black;
+
+    position:absolute;
+    right:0;
+    top:0;
 }
 
-#adress:invalid {
-    background-color: rgba(255, 0, 0, 0.253);
+#namn:invalid ~ .invalid-marker, 
+#email:invalid ~ .invalid-marker, 
+#adress:invalid ~ .invalid-marker{
+    display:flex;
 }
+
 
 @media (min-width:700px) {
 

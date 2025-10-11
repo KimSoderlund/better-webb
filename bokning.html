@@ -31,19 +31,22 @@
 
         <form action = "#">
 
-            <div>
+            <div class = "form-field">
                 <label for = "namn">Namn</label>
                 <input type="text" id="namn" name ="namn" placeholder = "För & Efternamn" required>
+            <div class = "invalid-marker">!</div>
             </div>
 
-            <div class = "span-row">
+            <div class = "span-row form-field">
                 <label for = "adress">Adress</label>
-                <textarea id = "adress" placeholder = "Adress" required></textarea>
+                <textarea id = "adress" placeholder = "Adress" rows="4" required></textarea>
+                <div class = "invalid-marker">!</div>
             </div>
 
-            <div>
+            <div class = "form-field">
                 <label for = "email">E-post</label>
                 <input type = "email" id = "email" name = "email" placeholder = "E-post" required>
+                <div class = "invalid-marker">!</div>
             </div>
 
             <div>
