@@ -2,53 +2,48 @@ footer {
     background-color: var(--icon-neutral);
 }
 
-.top-footer {
+.footer {
     display: grid;
     grid-template-columns: 1fr;
     height: fit-content;
 }
 
-
-.footer-endcolumn i {
-    font-size: 60px;
-    margin:0;
-    transition: color 1s;
+.social-tags {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 
 }
-.footer-endcolumn i:hover {
+
+.social-tags > i {
+    display:flex;
+    font-size: 50px;
+    margin:0;
+    margin:0.3em;
+    transition: color 1s;
+}
+.social-tags > i:hover {
     color: var(--textcolor-light);
     transition: color 0.2s;
 }
 
 .imgstyling {
+    margin-top: 3em;
     display: grid;
+    align-self: center;
+    justify-self: center;
     width: min(90%, 600px);
     height: auto;
 }
 .footer-bottom {
     background-color: var(--icon-dark);
-    grid-column: 1 / -1;
     text-align: center;
-    padding:1em;
+    padding: 1em;
+
 }
 
 .footer-bottom a {
     text-decoration: none;
-    transition: color 1s;
-    color: rgba(255, 255, 255, 0.5);
-}
-.footer-bottom a:hover {
-    transition: color 0.2s;
-    color: rgba(255, 255, 255, 1);
-}
-
-@media (min-width: 700px) {
-    .top-footer {
-     grid-template-columns: auto auto auto;
-    }
-
-    .link-column {
-    display:flex;
-    }
-    
+    color:white;
 }
