@@ -4,8 +4,7 @@ main {
 
 .hero-section {  
     color: var(--textcolor-light);
-    height:50vh;
-    font-size: 200%;   
+    height:50vh;  
 }
 
 form {

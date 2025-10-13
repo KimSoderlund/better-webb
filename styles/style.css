@@ -11,8 +11,8 @@
 
     --text-small: 0.9em;
     --text-medium: 1.1em;
-    --text-bigger: 2.5em;
-    --text-large: 3.2em;
+    --text-bigger: 2.7em;
+    --text-large: 3em;
     --text-xlarge: 4em;
 
 }
@@ -21,6 +21,7 @@ h1 { font-size: var(--text-xlarge); }
 h2 { font-size: var(--text-large); }
 h3 { font-size: var(--text-bigger); }
 p { font-size: var(--text-medium); }
+
 
 * {
     margin: 0;
