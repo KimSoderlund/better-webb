@@ -8,7 +8,19 @@
     --seperatorshadow-neutral:#badad5;
     --textcolor-light: white;
     --textcolor-dark: #03162D;
+
+    --text-small: 0.9em;
+    --text-medium: 1.1em;
+    --text-bigger: 2.5em;
+    --text-large: 3.2em;
+    --text-xlarge: 4em;
+
 }
+
+h1 { font-size: var(--text-xlarge); }
+h2 { font-size: var(--text-large); }
+h3 { font-size: var(--text-bigger); }
+p { font-size: var(--text-medium); }
 
 * {
     margin: 0;
@@ -20,15 +32,13 @@ html, body {
     width: 100%;
 }
 
+
 body {
     display: grid;
     grid-template-rows: auto 1fr auto;
 }
 
-
 /* HERO CSS */
-
-
 .hero-section {
     position: relative;  
     color: var(--textcolor-light);
@@ -58,12 +68,10 @@ body {
 
 
 /* GUEST SPEAKER CSS*/
-
-
 .left-right {
     display:grid;
     background-color: var(--background-neutral);
-    font-size: 150%;
+    /* font-size: 150%; */
     box-shadow: 0 1px 4px  var(--seperatorshadow-neutral);
 }
 .LR-text {
@@ -71,7 +79,7 @@ body {
     text-align: center;
 }
 .LR-text h2 {
-    font-size: 200%;
+    /* font-size: 200%; */
     margin:0 50px;
     border-bottom: 3px solid black;
 }
@@ -85,8 +93,6 @@ body {
 
 
 /*ABOUT CSS*/
-
-
 .about {
     margin:3em 2em;
     display: grid;
@@ -95,7 +101,7 @@ body {
     row-gap: 1em;
     align-items: right;
     justify-content: center;
-    font-size: 150%;
+    /* font-size: 150%; */
 
     & h2 + p {margin-top: 0.3em;}
 }
@@ -172,7 +178,7 @@ body {
         column-gap: 1em;
         align-items: right;
         justify-content: center;
-        font-size: 150%;
+        /* font-size: 150%; */
 
         & h2 + p {margin-top: 0.3em;}
     }
