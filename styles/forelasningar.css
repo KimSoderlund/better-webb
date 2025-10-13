@@ -18,6 +18,7 @@
 .card {
     padding: 3em;
     width:75vw;
+    text-align: center;
 }
 .lecture-text {
     padding:1em 1em;
