@@ -33,7 +33,7 @@ footer {
     display: grid;
     align-self: center;
     justify-self: center;
-    width: min(90%, 600px);
+    width: min(50%, 600px);
     height: auto;
 }
 .footer-bottom {
