@@ -72,7 +72,7 @@ label[for="nav-toggle"] {
 
     & a {
         text-decoration: none;
-        font-size: 200%;    
+        font-size: 1.5em;    
         font-weight: bold;
         color: var(--textcolor-light);
         padding: 0.5rem 1rem;
