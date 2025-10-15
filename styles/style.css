@@ -3,7 +3,7 @@
     --background-neutral:  #ddfffa;
     --background-dark:  #006161ec;
     --icon-light: white;
-    --icon-neutral:  rgb(135, 147, 255);
+    --icon-neutral:  #2cbebe;
     --icon-dark: #03162D;
     --seperatorshadow-neutral:#badad5;
     --textcolor-light: white;
@@ -104,6 +104,7 @@ body {
     height:9em;
 }
 .about-info > div {
+    color: var(--textcolor-light);
     position: absolute;
     top: 50%;
     left: 50%;
