@@ -10,6 +10,8 @@
     display:flex;
     flex-direction: column;
     align-items: center;
+    
+   & .card {color:var(--textcolor-light);}
 }
 
 .card, .lecture-text {
