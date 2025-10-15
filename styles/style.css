@@ -1,13 +1,13 @@
 :root {
     --background-light: white;
     --background-neutral:  #ddfffa;
-    --background-dark:  rgba(0, 168, 168, 0.9);
+    --background-dark:  #006161ec;
     --icon-light: white;
     --icon-neutral:  rgb(135, 147, 255);
     --icon-dark: #03162D;
     --seperatorshadow-neutral:#badad5;
     --textcolor-light: white;
-    --textcolor-dark: #03162D;
+    --textcolor-dark: #00040A;
 
     --text-small: clamp(0.8em, 1vw, 0.9em);
     --text-medium: clamp(0.9em, 1.2vw, 1.1em);
@@ -20,7 +20,6 @@ h1 { font-size: var(--text-xlarge); }
 h2 { font-size: var(--text-large); }
 h3 { font-size: var(--text-bigger); }
 p { font-size: var(--text-medium); }
-
 
 * {
     margin: 0;
