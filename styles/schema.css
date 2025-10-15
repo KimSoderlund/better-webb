@@ -15,22 +15,21 @@
 .schedule-grid {
     display: grid;
     grid-template-columns: auto 1fr;
-    
-
     border: 1px solid black;
     outline: 2px solid black;
-    
-    & h2 {
-        justify-self: center;
-    }
-    & p {
-        border: 1px solid black;
-        outline-offset: -1px;
-    }
-    & p, h2{ 
-        padding:0.2em;
-    }
 }
+
+.schedule-grid  h2 {
+    justify-self: center;
+}
+.schedule-grid  p {
+    border: 1px solid black;
+    outline-offset: -1px;
+}
+.schedule-grid  p, h2 {
+    padding:0.2em;
+}
+
 
 .schedule-grid p:nth-child(4n+2), 
 .schedule-grid p:nth-child(4n+3) {

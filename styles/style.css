@@ -43,7 +43,7 @@ body {
     position: relative;  
     color: var(--textcolor-light);
     height:100vh;    
-    background: linear-gradient(rgba(0, 0, 0, 0.4)), url(../images/hero-index.webp);
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/hero-index.webp);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -96,26 +96,23 @@ body {
     grid-template-columns: 1fr;
     column-gap: 1em;
     row-gap: 1em;
-    align-items: right;
     justify-content: center;
-
-    & h2 + p {margin-top: 0.3em;}
 }
 
 .about-info {
     position: relative;
     background-color: var(--background-dark);
     height:9em;
-
-    & div {
-        position:absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        text-align: center;
-        
-    }
 }
+.about-info > div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+
 .fade1, .fade2, .fade3 {
     opacity: 0;
     animation-duration: 20s;
@@ -170,10 +167,7 @@ body {
         display: grid;
         grid-template-columns: 1fr 1fr;
         column-gap: 1em;
-        align-items: right;
         justify-content: center;
-
-        & h2 + p {margin-top: 0.3em;}
     }
     
     .about-info {

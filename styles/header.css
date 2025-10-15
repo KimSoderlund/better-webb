@@ -12,23 +12,23 @@
     background-color: var(--background-dark);
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
     z-index:9999;
+}
 
-    & img {
-        margin: 0.5em 1em;
+.header-bottom img {
+    margin: 0.5em 1em;
         width:80px;
         height: auto;
-    }
 }
 
 
 /*Hamburger-menu*/
 .header-bottom > nav {
     display: none;
+}
 
-    & a {
-        display: flex;
-        align-items: center;
-    }
+.header-bottom > nav a {
+    display: flex;
+    align-items: center;
 }
 
 /* Hide Checkbox*/
@@ -48,10 +48,9 @@ label[for="nav-toggle"] {
     display: flex;
     justify-content: center;
     height: 100%;
-    
-    &:hover .fa-bars::before {
-        font-size:330%;
-    }
+}
+label[for="nav-toggle"]:hover {
+    font-size:105%;
 }
 
 /* Show dropdown*/
@@ -69,21 +68,22 @@ label[for="nav-toggle"] {
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
     z-index: 99;
     width: 50%;
-
-    & a {
-        text-decoration: none;
-        font-size: 1.5em;    
-        font-weight: bold;
-        color: var(--textcolor-light);
-        padding: 0.5rem 1rem;
-    }
-
-    & a:hover {
-        background-color: rgba(255, 255, 255, 0.7);
-        color: var(--icon-dark);
-        transition: background-color 0.3s ease, color 0.3s ease;
-    }
 }
+
+#nav-toggle ~ nav a {
+    text-decoration: none;
+    font-size: 1.5em;    
+    font-weight: bold;
+    color: var(--textcolor-light);
+    padding: 0.5rem 1rem;
+}
+
+#nav-toggle ~ nav a:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+    color: var(--icon-dark);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
 
 @media (min-width: 700px) {
 
