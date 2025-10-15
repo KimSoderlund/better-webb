@@ -16,10 +16,14 @@
 
 .header-bottom img {
     margin: 0.5em 1em;
-        width:80px;
-        height: auto;
+    width:80px;
+    height: auto;
+    transition: width 0.3s;
 }
 
+.header-bottom img:hover {
+    width: 84px;
+}
 
 /*Hamburger-menu*/
 .header-bottom > nav {

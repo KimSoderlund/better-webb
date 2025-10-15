@@ -4,11 +4,11 @@ main {
 
 .hero-section {  
     color: var(--textcolor-light);
-    height:50vh;  
+    height: 50vh;  
 }
 
 form {
-    display:grid;
+    display: grid;
     grid-template-columns: auto;
     background-color: var(--background-dark);
     color: var(--textcolor-light);
@@ -25,8 +25,8 @@ label {
 
 form textarea, form input[type = text], form input[type = email], form #mat {
     background-color: var(--background-neutral);
-    padding:0.5em;
-    border:none;
+    padding: 0.5em;
+    border: none;
     box-shadow: 0px 0px 4px var(--background-dark) inset;
 }
 
@@ -57,7 +57,7 @@ input[type = "checkbox"] {
     left: -99999px;
 }
 .form-days {
-    display:flex;
+    display: flex;
     height: 100%;
     align-items: center;
     justify-content: flex-start;
@@ -108,7 +108,7 @@ form-days label:active {
 #namn:invalid ~ .invalid-marker, 
 #email:invalid ~ .invalid-marker, 
 #adress:invalid ~ .invalid-marker{
-    display:flex;
+    display: flex;
 }
 
 

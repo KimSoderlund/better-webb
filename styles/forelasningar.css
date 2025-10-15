@@ -1,5 +1,5 @@
 .föreläs-section{
-    display:flex;
+    display: flex;
     flex-direction: column;
     gap: 1em;
 
@@ -7,7 +7,7 @@
 }
 
 .lecture-container {
-    display:flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
     
@@ -19,7 +19,7 @@
 }
 .card {
     padding: 3em;
-    width:75vw;
+    width: 75vw;
     text-align: center;
 }
 .lecture-text {
@@ -27,7 +27,7 @@
 }
 
 .card {
-    display:flex;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -36,20 +36,20 @@
     /* height:9em; */
 }
 .lecture-text {
-    display:flex;
+    display: flex;
 }
 
 @media (min-width:700px) {
     
     .lecture-container {
-        display:flex;
+        display: flex;
         flex-direction: row;
     }
     .reversed {
     flex-direction: row-reverse;    
     }
     .card, .lecture-text {
-    flex:1;
-    padding:3em;
+    flex: 1;
+    padding: 3em;
 }
 }
