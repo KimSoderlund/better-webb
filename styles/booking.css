@@ -16,7 +16,7 @@ form {
     padding: 1em;
     gap: 1em;
     font-size: 120%;
-    margin: 3em 2em;
+    margin: 1.5em 0.5em;
 }
 
 label {
@@ -139,6 +139,7 @@ form-days label:active {
 
 form {
     grid-template-columns: auto auto;
+    margin: 3em 2em;
 }
 
 form > div {
