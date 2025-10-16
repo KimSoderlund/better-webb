@@ -101,9 +101,9 @@ label[for="nav-toggle"]:hover {
         display: flex;
         flex-direction: row ;
         justify-content: flex-end;
-        position: static ;
-        background: none ;
-        box-shadow: none ;
+        position: static;
+        background: none;
+        box-shadow: none;
     }
 
     #nav-toggle, label[for = "nav-toggle"] {
