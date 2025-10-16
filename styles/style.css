@@ -102,7 +102,7 @@ body {
 .about-info {
     position: relative;
     background-color: var(--background-dark);
-    height:9em;
+    height:12em;
 }
 
 .about-info > div {
