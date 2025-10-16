@@ -16,7 +16,7 @@
 
 .header-bottom img {
     margin: 0.5em 1em;
-    width:80px;
+    width: 80px;
     height: auto;
     transition: width 0.3s;
 }
@@ -37,7 +37,8 @@
 
 /* Hide Checkbox*/
 #nav-toggle {
-    left: -99999px;
+    /*To do: Ta reda på varför det inte blir en scrollbar*/
+    left: -99999px; 
     position: absolute;
 }
 
@@ -96,13 +97,13 @@ label[for="nav-toggle"]:hover {
         padding: 0;
 }
 
-    .header-bottom > nav {
+    #nav-toggle ~ nav {
         display: flex;
-        flex-direction: row !important;
+        flex-direction: row ;
         justify-content: flex-end;
-        position: static !important;
-        background: none !important;
-        box-shadow: none !important;
+        position: static ;
+        background: none ;
+        box-shadow: none ;
     }
 
     #nav-toggle, label[for = "nav-toggle"] {
