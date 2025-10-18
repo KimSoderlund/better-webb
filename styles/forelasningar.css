@@ -1,9 +1,15 @@
+main {
+    background-color: var(--background-dark);
+}
+
 .föreläs-section{
     display: flex;
     flex-direction: column;
     gap: 1em;
+    padding: 3em 1em 1em 1em;
+    background-color: azure;
+    text-align: center;
 
-    margin-top: 3em;
 }
 
 .lecture-container {
@@ -19,7 +25,6 @@
 }
 .card {
     padding: 3em;
-    width: 75vw;
     text-align: center;
 }
 .lecture-text {
@@ -41,6 +46,12 @@
 
 @media (min-width:700px) {
     
+    .föreläs-section {
+        margin: 3em;
+        border: 2px solid black;
+
+    }
+
     .lecture-container {
         display: flex;
         flex-direction: row;
@@ -48,8 +59,9 @@
     .reversed {
     flex-direction: row-reverse;    
     }
+    
     .card, .lecture-text {
     flex: 1;
-    padding: 3em;
+    padding: 2em;
 }
 }

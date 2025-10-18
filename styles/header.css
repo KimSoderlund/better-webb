@@ -37,7 +37,6 @@
 
 /* Hide Checkbox*/
 #nav-toggle {
-    /*To do: Ta reda på varför det inte blir en scrollbar*/
     left: -99999px; 
     position: absolute;
 }

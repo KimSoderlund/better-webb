@@ -8,7 +8,7 @@
     --seperatorshadow-neutral:#badad5;
     --textcolor-light: white;
     --textcolor-dark: #00040A;
-/* To do: Gör inte texten mindre, ändra i media queries*/
+
     --text-small: 0.9em;
     --text-medium: 1em;
     --text-bigger: 1.7em;
@@ -41,8 +41,7 @@ body {
 .hero-section {
     position: relative;  
     color: var(--textcolor-light);
-    height:100vh;
-    /*to do: Testa filter https://developer.mozilla.org/en-US/docs/Web/CSS/filter*/    
+    height:100vh;    
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url(../images/hero-index.webp); 
     background-position: center;
     background-size: cover;
